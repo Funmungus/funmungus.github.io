@@ -8,16 +8,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hello. This is the self introduction page for Jonathan Pelletier. Nothing is here yet. Please look forward to it.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <span role="img" aria-label="bow">
+          🙇‍♂️
+        </span>
       </header>
     </div>
   );
