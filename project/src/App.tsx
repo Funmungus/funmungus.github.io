@@ -1,0 +1,56 @@
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+import { useEffect } from "react";
+
+function App() {
+  useEffect(() => {
+    document.title = "Jonathan Pelletier";
+  }, []);
+  return (
+    <div className="d-flex h-100 text-center text-white bg-dark">
+      <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <Header
+          onNavigateHome={function (): void {
+            throw new Error("Function not implemented.");
+          }}
+          onNavigateAbout={function (): void {
+            throw new Error("Function not implemented.");
+          }}
+          onNavigateContact={function (): void {
+            throw new Error("Function not implemented.");
+          }}
+        ></Header>
+
+        <main className="px-3">
+          <h1>Jonathan Pelletier</h1>
+          <section id="spacer"></section>
+          <p className="lead">
+            Hello. This is the self introduction page for Jonathan Pelletier.
+            Nothing is here yet. Please look forward to it.
+          </p>
+          <span role="img" aria-label="bow" className="lead">
+            🙇‍♂️
+          </span>
+          <section id="spacer">
+            <p></p>
+          </section>
+          <p className="lead">
+            <a
+              href="#"
+              className="btn btn-lg btn-secondary fw-bold border-white bg-white"
+            >
+              Learn more
+            </a>
+          </p>
+          <section id="spacer"></section>
+        </main>
+
+        <Footer></Footer>
+      </div>
+    </div>
+  );
+}
+
+export default App;
