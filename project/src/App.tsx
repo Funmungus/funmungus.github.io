@@ -10,16 +10,10 @@ function App() {
     document.title = "Jonathan Pelletier";
   }, []);
   return (
-    <div className="d-flex h-100 text-center text-white bg-dark">
+    <div className="d-flex h-100 text-center text-white bg-primary-teal">
       <div className="container cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <Header
           onNavigateHome={function (): void {
-            throw new Error("Function not implemented.");
-          }}
-          onNavigateAbout={function (): void {
-            throw new Error("Function not implemented.");
-          }}
-          onNavigateContact={function (): void {
             throw new Error("Function not implemented.");
           }}
           onNavigateProjects={function (): void {
@@ -40,7 +34,7 @@ function App() {
           <section id="spacer"></section>
           <div className="row align-items-start mb-3">
             <img
-              className="col img-thumbnail rounded-circle w-25 px-5 mx-5"
+              className="bg-info-teal col img-thumbnail rounded-circle w-25 px-5 mx-5"
               src={portraitImg}
               alt="profile picture"
             ></img>
