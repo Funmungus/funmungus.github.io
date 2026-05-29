@@ -40,12 +40,16 @@ function App() {
           <section id="spacer"></section>
           <div className="row align-items-start mb-3">
             <img
-              className="col img-thumbnail rounded-circle w-25 h-25"
+              className="col img-thumbnail rounded-circle w-25 px-5 mx-5"
               src={portraitImg}
               alt="profile picture"
             ></img>
             <div className="col align-self-end">
               <h1>Jonathan Pelletier</h1>
+              <h2>Software Engineer</h2>
+              <p className="subtitle">
+                I am a full stack developer with game and storytelling interest.
+              </p>
               <p className="lead">
                 Hello. This is the self introduction page for Jonathan
                 Pelletier. Nothing is here yet. Please look forward to it.
