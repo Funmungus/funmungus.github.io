@@ -8,6 +8,12 @@ Personal intro site for Jonathan Pelletier. React 19 SPA bootstrapped with Vite,
 - Root `CNAME` sets `funmungus.github.io` as the custom domain.
 - No monorepo tooling, no codegen, no migrations.
 
+## Source and Component Locations
+
+- ReactJS source code is in **`project/src/`**
+- New ReactJS components are added to **`project/src/components/`**
+- All new components must be written in **TypeScript**
+
 ## Commands
 
 Run everything from `project/`:
