@@ -22,6 +22,18 @@ function App() {
           onNavigateContact={function (): void {
             throw new Error("Function not implemented.");
           }}
+          onNavigateProjects={function (): void {
+            throw new Error("Function not implemented.");
+          }}
+          onNavigateBlog={function (): void {
+            throw new Error("Function not implemented.");
+          }}
+          onNavigateExperience={function (): void {
+            throw new Error("Function not implemented.");
+          }}
+          onNavigateResume={function (): void {
+            throw new Error("Function not implemented.");
+          }}
         ></Header>
 
         <main className="px-3">
