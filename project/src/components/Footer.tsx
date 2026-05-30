@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="mt-auto text-white-50">
+    <footer className="mt-auto text-white-80">
       Attributes:
       <ul className="list-group bg-dark text-white">
         <li className="list-group-item bg-dark text-white">
