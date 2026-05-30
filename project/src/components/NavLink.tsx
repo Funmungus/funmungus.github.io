@@ -10,7 +10,7 @@ export const NavLink: React.FC<NavLinkProps> = ({ label, onClick, active }) => {
   return (
     <a
       href="#"
-      className="nav-link"
+      className={`nav-link ${active ? "active" : ""}`}
       onClick={(e) => {
         e.preventDefault();
         onClick();
