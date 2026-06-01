@@ -7,7 +7,7 @@ const Experience: React.FC = () => {
       <section id="spacer"></section>
       <div className="row align-items-start mb-3">
         <img
-          className="bg-info-teal col img-thumbnail rounded-circle w-25 px-5 mx-5"
+          className="bg-info-teal col img-thumbnail rounded-circle w-25 mx-5"
           src={portraitImg}
           alt="profile picture"
         ></img>
