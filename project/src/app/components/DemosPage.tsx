@@ -31,7 +31,7 @@ export function DemosPage() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 space-y-16">
+    <div className="max-w-7xl mx-auto px-6 py-12 space-y-16 line-through">
       {demos.map((demo, index) => (
         <section
           key={demo.id}
@@ -53,7 +53,9 @@ export function DemosPage() {
             </Link>
           </div>
 
-          <div className={`aspect-video w-full rounded-lg overflow-hidden shadow-lg ${theme === "dark" ? "bg-gray-800" : "bg-gray-100"}`}>
+          <div
+            className={`aspect-video w-full rounded-lg overflow-hidden shadow-lg ${theme === "dark" ? "bg-gray-800" : "bg-gray-100"}`}
+          >
             <iframe
               src={demo.videoUrl}
               title={demo.title}
@@ -63,7 +65,9 @@ export function DemosPage() {
             />
           </div>
 
-          <p className={`leading-relaxed text-lg ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}>
+          <p
+            className={`leading-relaxed text-lg ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}
+          >
             {demo.description}
           </p>
         </section>

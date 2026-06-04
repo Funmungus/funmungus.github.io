@@ -51,10 +51,14 @@ export function ProjectsPage() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 space-y-16">
+    <div className="line-through max-w-7xl mx-auto px-6 py-12 space-y-16">
       <section className="space-y-8">
         <div className="space-y-2">
-          <h2 className={`text-3xl font-bold ${theme === "dark" ? "text-white" : "text-gray-900"}`}>Github Projects</h2>
+          <h2
+            className={`text-3xl font-bold ${theme === "dark" ? "text-white" : "text-gray-900"}`}
+          >
+            Github Projects
+          </h2>
           <p className={theme === "dark" ? "text-gray-400" : "text-gray-600"}>
             Open-source contributions and personal projects available on Github.
           </p>
@@ -71,8 +75,16 @@ export function ProjectsPage() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6 space-y-2">
-                <h3 className={`text-xl font-semibold ${theme === "dark" ? "text-white" : "text-gray-900"}`}>{project.title}</h3>
-                <p className={`text-sm ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>{project.description}</p>
+                <h3
+                  className={`text-xl font-semibold ${theme === "dark" ? "text-white" : "text-gray-900"}`}
+                >
+                  {project.title}
+                </h3>
+                <p
+                  className={`text-sm ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}
+                >
+                  {project.description}
+                </p>
               </div>
             </div>
           ))}
@@ -81,7 +93,11 @@ export function ProjectsPage() {
 
       <section className="space-y-8">
         <div className="space-y-2">
-          <h2 className={`text-3xl font-bold ${theme === "dark" ? "text-white" : "text-gray-900"}`}>Private Source</h2>
+          <h2
+            className={`text-3xl font-bold ${theme === "dark" ? "text-white" : "text-gray-900"}`}
+          >
+            Private Source
+          </h2>
           <p className={theme === "dark" ? "text-gray-400" : "text-gray-600"}>
             Proprietary projects and client work with confidential source code.
           </p>
@@ -98,8 +114,16 @@ export function ProjectsPage() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6 space-y-2">
-                <h3 className={`text-xl font-semibold ${theme === "dark" ? "text-white" : "text-gray-900"}`}>{project.title}</h3>
-                <p className={`text-sm ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}>{project.description}</p>
+                <h3
+                  className={`text-xl font-semibold ${theme === "dark" ? "text-white" : "text-gray-900"}`}
+                >
+                  {project.title}
+                </h3>
+                <p
+                  className={`text-sm ${theme === "dark" ? "text-gray-400" : "text-gray-600"}`}
+                >
+                  {project.description}
+                </p>
               </div>
             </div>
           ))}
