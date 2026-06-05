@@ -2,6 +2,7 @@ import { Outlet, Link, useLocation } from "react-router";
 import { useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
+import { TextLink } from "./TextLink";
 
 export function RootLayout() {
   const location = useLocation();
@@ -51,38 +52,22 @@ export function RootLayout() {
           >
             Jonathan Pelletier
           </Link>
+          <span
+            className={`hidden sm:block ${theme === "dark" ? "text-gray-200" : "text-gray-800"}`}
+          >
+            {getHeaderText()}
+          </span>
           <div className="flex items-center gap-6">
             <nav className="flex gap-6">
-              <Link
-                to="/"
-                className={
-                  theme === "dark"
-                    ? "text-gray-300 hover:text-blue-400 transition-colors"
-                    : "text-gray-700 hover:text-blue-600 transition-colors"
-                }
-              >
+              <TextLink to="/" invisibility={300}>
                 Profile
-              </Link>
-              <Link
-                to="/projects"
-                className={
-                  theme === "dark"
-                    ? "text-gray-300 hover:text-blue-400 transition-colors"
-                    : "text-gray-700 hover:text-blue-600 transition-colors"
-                }
-              >
+              </TextLink>
+              <TextLink to="/projects" invisibility={300}>
                 Projects
-              </Link>
-              <Link
-                to="/demos"
-                className={
-                  theme === "dark"
-                    ? "text-gray-300 hover:text-blue-400 transition-colors"
-                    : "text-gray-700 hover:text-blue-600 transition-colors"
-                }
-              >
+              </TextLink>
+              <TextLink to="/demos" invisibility={300}>
                 Demos
-              </Link>
+              </TextLink>
             </nav>
             <button
               onClick={toggleTheme}
@@ -116,39 +101,42 @@ export function RootLayout() {
             >
               <li className="list-group-item">
                 • favicon:{" "}
-                <Link
+                <TextLink
                   to="https://www.flaticon.com/free-icons/spider-web"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="spider web icons"
-                  className={`text-sm transition-colors ${theme === "dark" ? "text-gray-400 hover:text-blue-400" : "text-gray-600 hover:text-blue-600"}`}
+                  className="text-sm"
+                  invisibility={400}
                 >
                   Spider web icons created by Freepik - Flaticon
-                </Link>
+                </TextLink>
               </li>
               <li className="list-group-item">
                 •{" "}
-                <Link
+                <TextLink
                   to="https://ui.shadcn.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="shadcn-ui"
-                  className={`text-sm transition-colors ${theme === "dark" ? "text-gray-400 hover:text-blue-400" : "text-gray-600 hover:text-blue-600"}`}
+                  className="text-sm"
+                  invisibility={400}
                 >
                   shadcn/ui
-                </Link>
+                </TextLink>
               </li>
               <li className="list-group-item">
                 •{" "}
-                <Link
+                <TextLink
                   to="https://unsplash.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="unsplash"
-                  className={`text-sm transition-colors ${theme === "dark" ? "text-gray-400 hover:text-blue-400" : "text-gray-600 hover:text-blue-600"}`}
+                  className="text-sm"
+                  invisibility={400}
                 >
                   Unsplash
-                </Link>
+                </TextLink>
               </li>
             </ul>
           </div>
@@ -156,13 +144,14 @@ export function RootLayout() {
             className={`mt-6 pt-6 border-t grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 ${theme === "dark" ? "border-gray-800" : "border-gray-200"}`}
           >
             {footerLinks.map((link) => (
-              <Link
+              <TextLink
                 key={link.id}
                 to={link.href}
-                className={`text-sm transition-colors ${theme === "dark" ? "text-gray-400 hover:text-blue-400" : "text-gray-600 hover:text-blue-600"}`}
+                className="text-sm"
+                invisibility={400}
               >
                 {link.label}
-              </Link>
+              </TextLink>
             ))}
           </div>
           <div

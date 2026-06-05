@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { useTheme } from "../context/ThemeContext";
+import { TextLink } from "./TextLink";
 
 export function DemosPage() {
   const { theme } = useTheme();
@@ -45,12 +46,9 @@ export function DemosPage() {
                 className={`w-24 h-24 object-cover rounded-lg shadow-md ${theme === "dark" ? "shadow-blue-500/10" : "shadow-gray-300"}`}
               />
             </Link>
-            <Link
-              to="/"
-              className={`text-3xl font-bold transition-colors ${theme === "dark" ? "text-white hover:text-blue-400" : "text-gray-900 hover:text-blue-600"}`}
-            >
+            <TextLink to="/" className="text-3xl font-bold" invisibility={0}>
               {demo.title}
-            </Link>
+            </TextLink>
           </div>
 
           <div
