@@ -1,10 +1,11 @@
+
+# funmungus.github.io
+
+An introduction website as a Software Engineer. Showcase experience, projects, and demos.
+
+## Template of: react-template.github.io
+
 ![React on GitHub Pages](React-GitHub-Pages.png)
-
-# react-template.github.io
-
-A GitHub Pages template to serve a React application.
-
-Demo: https://react.lloyd.cx/
 
 ## Getting Started
 
